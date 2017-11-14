@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 60px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.ants-container{
+ 
+}
+
+.wincalc-btn{
+  clear: both;
+  display: block;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #000000;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #333;
+  background: transparent;
+  max-width: 200px;
+  margin: 10px;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0 !important;
+}
+
+.ants-list .list-block{
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.ants-list ul{
+  list-style: none;
+   -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 1%;
+  vertical-align: top;
+  padding:0;
+  background: #efefef;
+}
+
+
+.ants-list li{
+  padding: 10px;
+  text-align: center;
+}
+
+.winning-bar{
+  margin: 10px 15%;
+  padding: 0 !important;
+  position: relative;
+}
+.winning-bar:after{
+  content: "";
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 15px;
+  padding: 10px 0;
+  z-index: 1;
+
+}
+.winning-bar span, .winning-bar p{
+  width: 0;
+  height: 15px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  background-color: rgb(0, 129, 0);
+  display: block;
+  margin: 0;
+  position: relative;
+  top: 0;
+  z-index: 99;
+  transition: all 0.5s cubic-bezier(0.72, 0.01, 0.38, 1.23);
+}
+.winning-bar p{
+  width: 100%;
+}
